@@ -17,10 +17,10 @@ class LoginS extends JFrame
   {
   
   }
-
+  
  void setComponents()
   {
-    getContentPane().setBackground(Color.YELLOW);//
+   // getContentPane().setBackground(Color.YELLOW);//
 
     Font font=new Font("Times New Roman", Font.BOLD,28);
     Font font1=new Font("Callibri", Font.BOLD,18);
@@ -36,7 +36,11 @@ class LoginS extends JFrame
     
     label2=new JLabel("USERNAME");
     label2.setFont(font1);
-    label2.setForeground(Color.blue); 
+    Color color=Color.blue;
+    Color color2=color.brighter();
+    label2.setForeground(color2);
+    label2.setBackground(Color.BLACK); 
+    label1.setOpaque(true);
 
 
     label3=new JLabel("PASSWORD");
@@ -70,17 +74,17 @@ class LoginS extends JFrame
 
     img.setBounds(100,50,100,100);
     label1.setBounds(250,50,300,30);
-    label2.setBounds(150,200,200,30);
-    label3.setBounds(150,350,200,30);
+    label2.setBounds(200,200,200,30);
+    label3.setBounds(200,350,200,30);
     label4.setBounds(100,550,200,30);
     
 
-    textfield.setBounds(350,200,200,30);
-    passfield.setBounds(350,350,200,30);
+    textfield.setBounds(400,200,200,30);
+    passfield.setBounds(400,350,200,30);
 
     button1.setBounds(200,450,100,30);
-    button2.setBounds(400,450,100,30);
-    button3.setBounds(500,550,100,30);
+    button2.setBounds(450,450,100,30);
+    button3.setBounds(450,550,100,30);
 
     
     add(label1);
